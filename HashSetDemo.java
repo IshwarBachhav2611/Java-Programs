@@ -5,10 +5,24 @@ public class HashSetDemo {
 
         HashSet<String> set = new HashSet<>();
 
+        // add()
         set.add("Java");
         set.add("Python");
-        set.add("Java"); // ignored
+        set.add("Java"); // duplicate ignored
 
-        System.out.println(set);
+        System.out.println("Set: " + set);
+
+        // contains()
+        System.out.println("Contains Java: " + set.contains("Java"));
+
+        // remove()
+        set.remove("Python");
+        System.out.println("After remove: " + set);
+
+        // size()
+        System.out.println("Size: " + set.size());
+
+        // isEmpty()
+        System.out.println("Is Empty: " + set.isEmpty());
     }
 }
